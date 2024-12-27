@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Papers, Charts, Graphs</title>
+    <link rel="stylesheet" href="stylespdf.css">
+<style>
+.fab {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.fab:hover {
+    background-color: darkred;
+}
+    </style>
+</head>
+<body>
+<div class="sidebar" id="sidebar">
+    <h2>Papers</h2>
+    <ul>
+        <li><a id="pdf1-link">Arunachal</a></li>
+        <li><a id="pdf2-link">Endemic Amphibian</a></li>
+        <li><a id="pdf3-link">Fish Diversity</a></li>
+        <li><a id="pdf4-link">Medicine Plant</a></li>
+        <li><a id="pdf5-link"></a></li>
+        <li><a id="pdf6-link"></a></li>
+        <li><a id="pdf7-link"></a></li>
+        <li><a id="pdf8-link"></a></li>
+        <li><a id="pdf9-link"></a></li>
+        <li><a id="pdf10-link"></a></li>
+        <li><a id="pdf11-link"></a></li>
+        <li><a id="pdf12-link"></a></li>
+        <li><a id="pdf13-link"></a></li>
+        <li><a id="pdf14-link"></a></li>
+        <li><a id="pdf15-link"></a></li>
+        <li><a id="pdf16-link"></a></li>
+        <li><a id="pdf17-link"></a></li>
+        <li><a id="pdf18-link"></a></li>
+        <li><a id="pdf19-link"></a></li>
+        <li><a id="pdf20-link"></a></li>
+        <li><a id="pdf21-link"></a></li>
+        <li><a id="pdf22-link"></a></li>
+        <li><a id="pdf23-link"></a></li>
+    </ul>
+</div>
+<div class="main-content">
+    <button id="menu-btn" class="menu-btn">&#9776;</button>
+    <iframe id="pdf-viewer" src="https://drive.google.com/file/d/116kUbCsGzLqvlKThjHNbQT2xU6VMTt__/preview" allow="autoplay"></iframe>
+    <div id="offline-message" class="hidden">
+        <p>Please connect to the internet to view the PDFs.</p>
+    </div>
+</div>
+<button class="fab" onclick="openIndex1()">➜</button>
+<script>
+        function openIndex1() {
+            window.location.href = 'index.html';
+        }
+</script>
+<script src="scriptpdf.js"></script>
+</body>
+</html>

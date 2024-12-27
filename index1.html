@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+.fab {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.fab:hover {
+    background-color: darkred;
+}
+</style>
+</head>
+<body>
+    <h1>Quiz on Biodiversity of North East India</h1>
+
+<div class="question">
+    <p><strong>Q1:</strong> Which species use wildlife corridors in North East India to migrate safely?</p>
+    <label><input type="radio" name="q1" value="a"> a) Kangaroos</label><br>
+    <label><input type="radio" name="q1" value="b"> b) Elephants, tigers, and leopards</label><br>
+    <label><input type="radio" name="q1" value="c"> c) Penguins</label><br>
+    <label><input type="radio" name="q1" value="d"> d) Bears</label><br>
+    <button onclick="checkAnswer(1, 'b')">Check</button>
+    <button onclick="clearAnswer(1)">Clear</button>
+    <div id="feedback1" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q2:</strong> What is the role of soil biodiversity in North East India?</p>
+    <label><input type="radio" name="q2" value="a"> a) Producing oxygen</label><br>
+    <label><input type="radio" name="q2" value="b"> b) Enhancing soil fertility through microbial activity</label><br>
+    <label><input type="radio" name="q2" value="c"> c) Attracting pollinators</label><br>
+    <label><input type="radio" name="q2" value="d"> d) Promoting monoculture</label><br>
+    <button onclick="checkAnswer(2, 'b')">Check</button>
+    <button onclick="clearAnswer(2)">Clear</button>
+    <div id="feedback2" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q3:</strong> Which carnivorous plant is found in Meghalaya?</p>
+    <label><input type="radio" name="q3" value="a"> a) Venus Flytrap</label><br>
+    <label><input type="radio" name="q3" value="b"> b) Pitcher Plant</label><br>
+    <label><input type="radio" name="q3" value="c"> c) Cobra Lily</label><br>
+    <label><input type="radio" name="q3" value="d"> d) Bladderwort</label><br>
+    <button onclick="checkAnswer(3, 'b')">Check</button>
+    <button onclick="clearAnswer(3)">Clear</button>
+    <div id="feedback3" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q4:</strong> What is a key adaptation of the Bengal Slow Loris?</p>
+    <label><input type="radio" name="q4" value="a"> a) Speedy movement</label><br>
+    <label><input type="radio" name="q4" value="b"> b) Camouflaging ability</label><br>
+    <label><input type="radio" name="q4" value="c"> c) High-speed flight</label><br>
+    <label><input type="radio" name="q4" value="d"> d) Burrowing</label><br>
+    <button onclick="checkAnswer(4, 'b')">Check</button>
+    <button onclick="clearAnswer(4)">Clear</button>
+    <div id="feedback4" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q5:</strong> Which high-altitude species is found in Sikkim and Arunachal Pradesh?</p>
+    <label><input type="radio" name="q5" value="a"> a) Bengal Tiger</label><br>
+    <label><input type="radio" name="q5" value="b"> b) Snow Partridge</label><br>
+    <label><input type="radio" name="q5" value="c"> c) Hornbill</label><br>
+    <label><input type="radio" name="q5" value="d"> d) Crocodile</label><br>
+    <button onclick="checkAnswer(5, 'b')">Check</button>
+    <button onclick="clearAnswer(5)">Clear</button>
+    <div id="feedback5" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q6:</strong> What is a rare and endemic plant species in North East India?</p>
+    <label><input type="radio" name="q6" value="a"> a) Banyan Tree</label><br>
+    <label><input type="radio" name="q6" value="b"> b) Sapria himalayana</label><br>
+    <label><input type="radio" name="q6" value="c"> c) Sunflower</label><br>
+    <label><input type="radio" name="q6" value="d"> d) Rose</label><br>
+    <button onclick="checkAnswer(6, 'b')">Check</button>
+    <button onclick="clearAnswer(6)">Clear</button>
+    <div id="feedback6" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q7:</strong> Which invasive species poses a threat to biodiversity in the region?</p>
+    <label><input type="radio" name="q7" value="a"> a) Aloe Vera</label><br>
+    <label><input type="radio" name="q7" value="b"> b) Water Hyacinth</label><br>
+    <label><input type="radio" name="q7" value="c"> c) Bamboo</label><br>
+    <label><input type="radio" name="q7" value="d"> d) Mango Tree</label><br>
+    <button onclick="checkAnswer(7, 'b')">Check</button>
+    <button onclick="clearAnswer(7)">Clear</button>
+    <div id="feedback7" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q8:</strong> What is a significant impact of monoculture plantations?</p>
+    <label><input type="radio" name="q8" value="a"> a) Increased biodiversity</label><br>
+    <label><input type="radio" name="q8" value="b"> b) Soil and habitat degradation</label><br>
+    <label><input type="radio" name="q8" value="c"> c) Reduced carbon emissions</label><br>
+    <label><input type="radio" name="q8" value="d"> d) Promotion of tourism</label><br>
+    <button onclick="checkAnswer(8, 'b')">Check</button>
+    <button onclick="clearAnswer(8)">Clear</button>
+    <div id="feedback8" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q9:</strong> Which agricultural crops are traditionally cultivated in North East India?</p>
+    <label><input type="radio" name="q9" value="a"> a) Wheat and barley</label><br>
+    <label><input type="radio" name="q9" value="b"> b) Upland rice and millets</label><br>
+    <label><input type="radio" name="q9" value="c"> c) Sugarcane and coffee</label><br>
+    <label><input type="radio" name="q9" value="d"> d) Corn and soybeans</label><br>
+    <button onclick="checkAnswer(9, 'b')">Check</button>
+    <button onclick="clearAnswer(9)">Clear</button>
+    <div id="feedback9" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q10:</strong> Which NGO works on biodiversity conservation in North East India?</p>
+    <label><input type="radio" name="q10" value="a"> a) Red Cross</label><br>
+    <label><input type="radio" name="q10" value="b"> b) Aaranyak</label><br>
+    <label><input type="radio" name="q10" value="c"> c) Greenpeace</label><br>
+    <label><input type="radio" name="q10" value="d"> d) Oxfam</label><br>
+    <button onclick="checkAnswer(10, 'b')">Check</button>
+    <button onclick="clearAnswer(10)">Clear</button>
+    <div id="feedback10" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q11:</strong> What is the aim of conservation programs regarding traditional hunting?</p>
+    <label><input type="radio" name="q11" value="a"> a) Ban all hunting practices</label><br>
+    <label><input type="radio" name="q11" value="b"> b) Balance cultural traditions with sustainable practices</label><br>
+    <label><input type="radio" name="q11" value="c"> c) Encourage trophy hunting</label><br>
+    <label><input type="radio" name="q11" value="d"> d) Replace hunting with farming</label><br>
+    <button onclick="checkAnswer(11, 'b')">Check</button>
+    <button onclick="clearAnswer(11)">Clear</button>
+    <div id="feedback11" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q12:</strong> What is a sustainable tourism practice in the region?</p>
+    <label><input type="radio" name="q12" value="a"> a) Building luxury hotels</label><br>
+    <label><input type="radio" name="q12" value="b"> b) Guided nature walks and homestays</label><br>
+    <label><input type="radio" name="q12" value="c"> c) Hunting tours</label><br>
+    <label><input type="radio" name="q12" value="d"> d) Mining expeditions</label><br>
+    <button onclick="checkAnswer(12, 'b')">Check</button>
+    <button onclick="clearAnswer(12)">Clear</button>
+    <div id="feedback12" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q13:</strong> Which river is home to the Ganges River Dolphin?</p>
+    <label><input type="radio" name="q13" value="a"> a) Yamuna River</label><br>
+    <label><input type="radio" name="q13" value="b"> b) Brahmaputra River</label><br>
+    <label><input type="radio" name="q13" value="c"> c) Ganga River</label><br>
+    <label><input type="radio" name="q13" value="d"> d) Godavari River</label><br>
+    <button onclick="checkAnswer(13, 'b')">Check</button>
+    <button onclick="clearAnswer(13)">Clear</button>
+    <div id="feedback13" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q14:</strong> What is the focus of ethnobotanical studies in North East India?</p>
+    <label><input type="radio" name="q14" value="a"> a) Preserving rare animal species</label><br>
+    <label><input type="radio" name="q14" value="b"> b) Documenting traditional plant knowledge</label><br>
+    <label><input type="radio" name="q14" value="c"> c) Mapping mineral resources</label><br>
+    <label><input type="radio" name="q14" value="d"> d) Promoting synthetic medicines</label><br>
+    <button onclick="checkAnswer(14, 'b')">Check</button>
+    <button onclick="clearAnswer(14)">Clear</button>
+    <div id="feedback14" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q15:</strong> Which animal appears frequently in the folklore of North East India?</p>
+    <label><input type="radio" name="q15" value="a"> a) Elephant</label><br>
+    <label><input type="radio" name="q15" value="b"> b) Tiger</label><br>
+    <label><input type="radio" name="q15" value="c"> c) Deer</label><br>
+    <label><input type="radio" name="q15" value="d"> d) Crocodile</label><br>
+    <button onclick="checkAnswer(15, 'b')">Check</button>
+    <button onclick="clearAnswer(15)">Clear</button>
+    <div id="feedback15" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q16:</strong> What is a critical role of mosses and ferns in the region?</p>
+    <label><input type="radio" name="q16" value="a"> a) Water retention and soil stabilization</label><br>
+    <label><input type="radio" name="q16" value="b"> b) Pest control</label><br>
+    <label><input type="radio" name="q16" value="c"> c) Promoting tourism</label><br>
+    <label><input type="radio" name="q16" value="d"> d) Food production</label><br>
+    <button onclick="checkAnswer(16, 'a')">Check</button>
+    <button onclick="clearAnswer(16)">Clear</button>
+    <div id="feedback16" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q17:</strong> Which amphibian is found in North East India?</p>
+    <label><input type="radio" name="q17" value="a"> a) Flying Gecko</label><br>
+    <label><input type="radio" name="q17" value="b"> b) Green Turtle</label><br>
+    <label><input type="radio" name="q17" value="c"> c) Monitor Lizard</label><br>
+    <label><input type="radio" name="q17" value="d"> d) Salamander</label><br>
+    <button onclick="checkAnswer(17, 'a')">Check</button>
+    <button onclick="clearAnswer(17)">Clear</button>
+    <div id="feedback17" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q18:</strong> What does high-altitude biodiversity in the region include?</p>
+    <label><input type="radio" name="q18" value="a"> a) Snow Leopards and Blue Sheep</label><br>
+    <label><input type="radio" name="q18" value="b"> b) Dolphins and Crocodiles</label><br>
+    <label><input type="radio" name="q18" value="c"> c) Coral Reefs and Mangroves</label><br>
+    <label><input type="radio" name="q18" value="d"> d) Camels and Coyotes</label><br>
+    <button onclick="checkAnswer(18, 'a')">Check</button>
+    <button onclick="clearAnswer(18)">Clear</button>
+    <div id="feedback18" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q19:</strong> What is a common reason for human-wildlife conflicts in North East India?</p>
+    <label><input type="radio" name="q19" value="a"> a) Excessive tourism</label><br>
+    <label><input type="radio" name="q19" value="b"> b) Expansion of human settlements</label><br>
+    <label><input type="radio" name="q19" value="c"> c) Scarcity of water</label><br>
+    <label><input type="radio" name="q19" value="d"> d) Overfishing</label><br>
+    <button onclick="checkAnswer(19, 'b')">Check</button>
+    <button onclick="clearAnswer(19)">Clear</button>
+    <div id="feedback19" class="feedback"></div>
+</div>
+
+<div class="question">
+    <p><strong>Q20:</strong> What role do hornbills play in the ecosystem?</p>
+    <label><input type="radio" name="q20" value="a"> a) Pollinators</label><br>
+    <label><input type="radio" name="q20" value="b"> b) Seed dispersers</label><br>
+    <label><input type="radio" name="q20" value="c"> c) Soil stabilizers</label><br>
+    <label><input type="radio" name="q20" value="d"> d) Pest controllers</label><br>
+    <button onclick="checkAnswer(20, 'b')">Check</button>
+    <button onclick="clearAnswer(20)">Clear</button>
+    <div id="feedback20" class="feedback"></div>
+</div>
+
+
+        <div class="action-buttons">
+        <button onclick="checkAllAnswers()">Check All</button>
+        <button class="clear" onclick="clearAllAnswers()">Clear All</button>
+        <button class="correct-option" onclick="markCorrectOptions()">Get Correct Option</button>
+    </div>
+<button class="fab" onclick="openIndex1()">➜</button>
+<script>
+        function openIndex1() {
+            window.location.href = 'index.html';  // Opens index1.html
+        }
+</script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+

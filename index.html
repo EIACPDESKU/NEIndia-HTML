@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Responsive Floating Buttons Page</title>
+    <link id="stylesheet" rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- Toggle Buttons -->
+    <button class="floating-btn" id="sidebarToggle">☰</button>
+    <button class="floating-btn bottom-right" id="openPageBtn">📄</button>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" id="closeSidebar">✖</button>
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index1.html">Play Quiz</a></li>
+            <li><a href="basic.html">Definition</a></li>
+            <li><a href="ff.html">Flora & Fauna</a></li>
+            <li><a href="nei3.html"><b>Assam & Sikkim</b></a></li>
+            <li><a href="nei2.html"><b>Tripura & Meghalaya</b></a></li>
+            <li><a href="nei1.html"><b>Manipur & Mizoram</b></a></li>
+            <li><a href="nei.html"><b>Arunachal Pradesh & Nagaland</b></a></li>
+            <li><a href="pdf.html">Charts, Graphs, Papers</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content: Cards -->
+    <div class="card-container">
+    <div class="card" onclick="openPopup('img1.jpg', 'North East India is one of the world\'s biodiversity hotspots. The region is part of the Indo-Burma biodiversity hotspot and boasts rich flora and fauna, thanks to its diverse ecosystems, ranging from tropical rainforests to alpine meadows.')">
+        <img src="img1.jpg" alt="Introduction to North East India's Biodiversity">
+        <p>Introduction to North East India's Biodiversity</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img2.jpg', 'The region is home to over 8,000 species of flowering plants, including unique orchids like Paphiopedilum fairrieanum (Fairy Slipper Orchid) and Vanda coerulea (Blue Vanda). Medicinal plants such as neem, basil, and ginseng thrive here due to the favorable climate.')">
+        <img src="img2.jpg" alt="Flora of North East India">
+        <p>Flora of North East India</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img3.jpg', 'North East India hosts rare and endangered animals like the one-horned rhinoceros in Assam\'s Kaziranga National Park, the red panda in Arunachal Pradesh, and the Hoolock gibbon, India\'s only ape species. The region\'s rich birdlife includes the hornbill, revered in tribal folklore.')">
+        <img src="img3.jpg" alt="Fauna of North East India">
+        <p>Fauna of North East India</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img4.jpg', 'The Brahmaputra River and its tributaries support numerous fish species, including the rare Golden Mahseer. Wetlands like Loktak Lake in Manipur, with its floating phumdis (vegetation mats), are crucial habitats for migratory birds and aquatic life.')">
+        <img src="img4.jpg" alt="Aquatic Biodiversity">
+        <p>Aquatic Biodiversity</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img10.jpg', 'The indigenous communities of the region possess rich traditional knowledge about biodiversity. They practice sustainable agriculture and maintain sacred groves, which serve as biodiversity reserves.')">
+        <img src="img10.jpg" alt="Tribal Knowledge and Biodiversity">
+        <p>Tribal Knowledge and Biodiversity</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img8.jpg', 'The region includes prominent national parks and wildlife sanctuaries such as Kaziranga, Manas, Nameri, and Namdapha. These protected areas play a vital role in conserving the region\'s unique biodiversity.')">
+        <img src="img8.jpg" alt="Biodiversity Hotspots and Protected Areas">
+        <p>Biodiversity Hotspots and Protected Areas</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img16.jpg', 'Deforestation, habitat loss, climate change, and illegal wildlife trade pose significant threats to the biodiversity of North East India. Efforts are underway to mitigate these challenges through conservation programs and awareness campaigns.')">
+        <img src="img16.jpg" alt="Threats to Biodiversity">
+        <p>Threats to Biodiversity</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img15.jpg', 'Government initiatives like Project Tiger, Project Elephant, and community-driven programs aim to preserve the region\'s rich biodiversity. Organizations also work to promote eco-tourism and biodiversity research.')">
+        <img src="img15.jpg" alt="Conservation Efforts">
+        <p>Conservation Efforts</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img25.jpg', 'Sacred groves are forest patches preserved by indigenous communities due to their cultural and religious significance. These areas are rich in endemic and rare species and play a critical role in conserving biodiversity. Notable examples include the Mawphlang Sacred Forest in Meghalaya.')">
+        <img src="img25.jpg" alt="Sacred Groves: Nature's Reservoirs">
+        <p>Sacred Groves: Nature's Reservoirs</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img18.jpg', 'The region features diverse ecosystems such as alpine meadows in Sikkim, tropical forests in Assam and Arunachal Pradesh, and wetlands like the Deepor Beel. Each ecosystem supports unique species, making the region ecologically significant.')">
+        <img src="img18.jpg" alt="Unique Ecosystems of North East India">
+        <p>Unique Ecosystems of North East India</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img31.jpg', 'The region is known as a paradise for butterfly enthusiasts, with species like the Bhutan Glory, Kaiser-i-Hind, and Tytler’s Treebrown. These insects are crucial for pollination and serve as bioindicators of a healthy environment.')">
+        <img src="img31.jpg" alt="Butterflies of North East India">
+        <p>Butterflies of North East India</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img16.jpg', 'Several species in the region are critically endangered, such as the pygmy hog, white-winged wood duck, and clouded leopard. Conservation initiatives focus on protecting these species through habitat preservation and breeding programs.')">
+        <img src="img16.jpg" alt="Endangered Species of North East India">
+        <p>Endangered Species of North East India</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img29.jpg', 'Wetlands like Loktak Lake and Deepor Beel are biodiversity hotspots. They support unique flora and fauna, including migratory birds, amphibians, and aquatic plants. These wetlands also provide ecosystem services like water filtration and flood control.')">
+        <img src="img29.jpg" alt="Role of Wetlands in Biodiversity">
+        <p>Role of Wetlands in Biodiversity</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img2.jpg', 'North East India is the Orchid Paradise of India, harboring nearly 70% of the country\'s orchid species. Notable species include the Foxtail Orchid (Rhynchostylis retusa), the state flower of Arunachal Pradesh, and the Lady\'s Slipper Orchid.')">
+        <img src="img2.jpg" alt="Orchid Diversity in North East India">
+        <p>Orchid Diversity in North East India</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img28.jpg', 'The region is a haven for birdwatchers, hosting over 1,000 bird species. Highlights include the Great Indian Hornbill, Blyth\'s Tragopan, and Himalayan Monal. Bird sanctuaries like Nameri and Dibru-Saikhowa offer excellent opportunities to observe these species.')">
+        <img src="img28.jpg" alt="Avian Diversity: Birds of North East India">
+        <p>Avian Diversity: Birds of North East India</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img4.jpg', 'The cultural practices of tribes like the Nagas, Mizos, and Khasi are intertwined with biodiversity. Practices like jhum (shifting) cultivation and bamboo craft reflect their deep connection with nature while emphasizing sustainability.')">
+        <img src="img4.jpg" alt="Cultural Biodiversity: Linking People and Nature">
+        <p>Cultural Biodiversity: Linking People and Nature</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img8.jpg', 'North East India is often called the Bamboo Basket of India. It is home to over 50 species of bamboo, including the Giant Bamboo (Dendrocalamus giganteus). Bamboo plays a significant role in the local economy and ecology.')">
+        <img src="img8.jpg" alt="Bamboo Biodiversity">
+        <p>Bamboo Biodiversity</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img21.jpg', 'The region is a hotspot for amphibians and reptiles, including the Flying Frog, King Cobra, and Assam Roofed Turtle. These species thrive in the rainforests and wetlands of the area.')">
+        <img src="img21.jpg" alt="Amphibians and Reptiles of North East India">
+        <p>Amphibians and Reptiles of North East India</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img7.jpg', 'North East India is rich in medicinal plants like Taxus wallichiana (used for cancer treatment) and Swertia chirayita (used for liver ailments). These plants are a vital part of traditional medicine and modern pharmaceuticals.')">
+        <img src="img7.jpg" alt="Medicinal Plants and Their Uses">
+        <p>Medicinal Plants and Their Uses</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img29.jpg', 'Rivers like the Brahmaputra and Barak provide lifelines for biodiversity. They support aquatic ecosystems and riparian habitats, which are critical for species like river dolphins, otters, and aquatic plants.')">
+        <img src="img29.jpg" alt="Role of Rivers in Biodiversity">
+        <p>Role of Rivers in Biodiversity</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img31.jpg', 'Bees, butterflies, and bats are vital pollinators in North East India. Their role in maintaining agricultural productivity and ecosystem balance underscores the need for their conservation.')">
+        <img src="img31.jpg" alt="Pollinators and Their Importance">
+        <p>Pollinators and Their Importance</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img18.jpg', 'Climate change poses a significant threat to the region’s biodiversity, altering habitats and migration patterns. Species like snow leopards and high-altitude plants are particularly vulnerable to these changes.')">
+        <img src="img18.jpg" alt="Climate Change and Biodiversity">
+        <p>Climate Change and Biodiversity</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img9.jpg', 'Eco-tourism initiatives in areas like Kaziranga, Manas, and Ziro Valley promote conservation while providing sustainable livelihoods to local communities. Tourists can experience the region\'s rich biodiversity responsibly.')">
+        <img src="img9.jpg" alt="Eco-tourism and Biodiversity">
+        <p>Eco-tourism and Biodiversity</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img5.jpg', 'Several tribal communities practice sustainable forest management. These initiatives, often supported by NGOs, ensure that forests continue to thrive while meeting the needs of the people.')">
+        <img src="img5.jpg" alt="Community Forest Management">
+        <p>Community Forest Management</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img12.jpg', 'From the Indian elephant to the slow loris, the region hosts a variety of mammals. Their habitats, ranging from dense forests to high-altitude meadows, are critical for their survival.')">
+        <img src="img12.jpg" alt="Mammalian Biodiversity">
+        <p>Mammalian Biodiversity</p>
+    </div>
+    <div class="card" onclick="openPopup('img14.jpg', 'The mangrove forests in regions like Dibru-Saikhowa National Park provide a unique habitat for salt-tolerant plant species and a nursery ground for fish, crabs, and shrimp. They also serve as a natural barrier against coastal erosion.')">
+        <img src="img14.jpg" alt="Mangrove Ecosystems in North East India">
+        <p>Mangrove Ecosystems in North East India</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img31.jpg', 'North East India is teeming with insect life, including rare species of beetles, dragonflies, and ants. The diversity of insects contributes to pollination, decomposition, and soil enrichment, supporting the entire ecosystem.')">
+        <img src="img31.jpg" alt="Insect Diversity in North East India">
+        <p>Insect Diversity in North East India</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img11.jpg', 'The floodplains of Assam, including those in Kaziranga and Manas, host vast grasslands that are vital for herbivores like swamp deer and rhinoceros. These grasslands also support numerous bird species, including storks and cranes.')">
+        <img src="img11.jpg" alt="Grasslands and Their Importance">
+        <p>Grasslands and Their Importance</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img10.jpg', 'The agricultural practices in North East India rely heavily on biodiversity. Crops like rice, millet, and maize are grown using traditional methods that enhance soil fertility and pest resistance, ensuring food security.')">
+        <img src="img10.jpg" alt="Role of Biodiversity in Agriculture">
+        <p>Role of Biodiversity in Agriculture</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img32.jpg', 'The region is rich in fungal diversity, including edible mushrooms like shiitake and medicinal fungi like Ganoderma lucidum. Lichens, which grow abundantly in the forests, are indicators of air quality and provide dyes and medicines.')">
+        <img src="img32.jpg" alt="Fungi and Lichens of North East India">
+        <p>Fungi and Lichens of North East India</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img18.jpg', 'The high-altitude zones of the Eastern Himalayas host unique species like snow leopards, Himalayan yaks, and medicinal plants such as Saussurea obvallata (Brahma Kamal). These areas are fragile and highly susceptible to climate change.')">
+        <img src="img18.jpg" alt="High-Altitude Biodiversity in Sikkim and Arunachal Pradesh">
+        <p>High-Altitude Biodiversity in Sikkim and Arunachal Pradesh</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img24.jpg', 'The Brahmaputra River supports river dolphins, freshwater turtles, and a range of aquatic plants. River islands like Majuli are biodiversity hotspots with unique ecosystems.')">
+        <img src="img24.jpg" alt="Riverine Ecosystems of the Brahmaputra Basin">
+        <p>Riverine Ecosystems of the Brahmaputra Basin</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img4.jpg', 'Ethnobotany explores the relationship between indigenous communities and plant species. Tribes in North East India use plants for food, shelter, rituals, and medicine, preserving this knowledge through oral traditions.')">
+        <img src="img4.jpg" alt="Ethnobotany: Plants and Tribal Cultures">
+        <p>Ethnobotany: Plants and Tribal Cultures</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img17.jpg', 'Wetlands like Dibru-Saikhowa and Loktak Lake attract migratory birds such as Siberian cranes and bar-headed geese. These migrations are crucial for maintaining global biodiversity and provide a spectacle for birdwatchers.')">
+        <img src="img17.jpg" alt="Seasonal Migration of Birds">
+        <p>Seasonal Migration of Birds</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img14.jpg', 'Jhum (shifting) cultivation, practiced by tribal communities, fosters biodiversity by creating a mosaic of habitats. While controversial, it supports unique species adapted to secondary forests.')">
+        <img src="img14.jpg" alt="Biodiversity in Jhum Cultivation Areas">
+        <p>Biodiversity in Jhum Cultivation Areas</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img13.jpg', 'The dense forest canopies in Arunachal Pradesh and Meghalaya are home to arboreal species like flying squirrels, tree frogs, and canopy-dwelling birds. Protecting these forests ensures the survival of these species.')">
+        <img src="img13.jpg" alt="Conservation of Forest Canopies">
+        <p>Conservation of Forest Canopies</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img32.jpg', 'The region is home to bioluminescent fungi and fireflies, creating magical nightscapes in forests. These organisms are vital for ecological research and add to the region’s natural beauty.')">
+        <img src="img32.jpg" alt="Bioluminescent Organisms in North East India">
+        <p>Bioluminescent Organisms in North East India</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img19.jpg', 'As part of the Indo-Burma biodiversity hotspot, North East India contributes significantly to global biodiversity. Its ecosystems are a critical link between the Indian subcontinent and Southeast Asia.')">
+        <img src="img19.jpg" alt="Role of North East India in Global Biodiversity">
+        <p>Role of North East India in Global Biodiversity</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img29.jpg', 'The heavy monsoon rains in the region rejuvenate rivers, wetlands, and forests, supporting seasonal breeding cycles of amphibians, insects, and fish. However, excessive rainfall can also lead to floods, impacting habitats.')">
+        <img src="img29.jpg" alt="Impact of Monsoons on Biodiversity">
+        <p>Impact of Monsoons on Biodiversity</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img2.jpg', 'Arunachal Pradesh is home to over 600 orchid species, including the rare Dendrobium nobile and Vanda tessellata. Orchids are vital for ecological balance and contribute to the region’s horticulture.')">
+        <img src="img2.jpg" alt="Rare Orchids of Arunachal Pradesh">
+        <p>Rare Orchids of Arunachal Pradesh</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img17.jpg', 'Festivals like Hornbill Festival in Nagaland celebrate nature and promote biodiversity awareness. These festivals highlight sustainable practices and showcase traditional knowledge about flora and fauna.')">
+        <img src="img17.jpg" alt="Role of Tribal Festivals in Biodiversity Awareness">
+        <p>Role of Tribal Festivals in Biodiversity Awareness</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img8.jpg', 'The forests of North East India act as significant carbon sinks, helping mitigate climate change. Protecting these forests is crucial for maintaining this ecosystem service.')">
+        <img src="img8.jpg" alt="Role of Biodiversity in Carbon Sequestration">
+        <p>Role of Biodiversity in Carbon Sequestration</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img26.jpg', 'Institutions like the North East Hill University (NEHU) and Rain Forest Research Institute conduct biodiversity research. Educational programs aim to promote awareness and train conservationists.')">
+        <img src="img26.jpg" alt="Biodiversity Research and Education">
+        <p>Biodiversity Research and Education</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img15.jpg', 'Wildlife corridors in North East India connect fragmented habitats, allowing species like elephants and tigers to migrate safely. These corridors are vital for maintaining genetic diversity.')">
+        <img src="img15.jpg" alt="Wildlife Corridors and Connectivity">
+        <p>Wildlife Corridors and Connectivity</p>
+    </div>
+
+    <div class="card" onclick="openPopup('img18.jpg', 'The region lies at the crossroads of the Indian, Indo-Malayan, and Indo-Chinese biogeographical zones, resulting in high species diversity and endemism.')">
+        <img src="img18.jpg" alt="Zoogeographical Importance of North East India">
+        <p>Zoogeographical Importance of North East India</p>
+    </div>
+
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup()">✖</button>
+            <img id="popupImage" src="" alt="Popup Image">
+            <p id="popupText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

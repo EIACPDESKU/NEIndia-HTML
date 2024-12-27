@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f9;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #0288d1, #26c6da);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Intro Section */
+#intro p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Achievements Section */
+#achievements h2, #future-plans h2, #contact h2 {
+    color: #0288d1;
+    border-bottom: 2px solid #0288d1;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+#achievements ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#achievements ul li {
+    margin-bottom: 8px;
+}
+
+/* Future Plans Section */
+#future-plans ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+#future-plans ol li {
+    margin-bottom: 8px;
+}
+
+/* Contact Section */
+#contact address {
+    line-height: 1.8;
+}
+
+#contact a {
+    color: #0288d1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Text */
+section p small {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px; /* Add padding on smaller screens */
+    }
+
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #intro p, #achievements ul li, #future-plans ol li {
+        font-size: 1rem;
+    }
+}
+

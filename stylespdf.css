@@ -1,0 +1,137 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #F4F7F6; /* Lighter background */
+}
+
+.sidebar {
+    width: 250px;
+    background: rgba(35, 84, 120, 0.7); /* Slightly darker glass effect */
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto; /* Scrollable */
+    max-height: 100%;
+}
+
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+.sidebar h2 {
+    margin: 0 0 20px;
+    font-size: 20px;
+    color: #B0D9C4; /* Softer green shade */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #B0D9C4; /* Softer green shade */
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 8px 10px;
+    display: block;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: rgba(128, 179, 155, 0.4); /* Slightly brighter hover effect */
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F7F6; /* Matches body background */
+    position: relative;
+    overflow: hidden;
+}
+
+iframe {
+    width: 90%;
+    height: 90%;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Offline Message Styling */
+#offline-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #8B0000; /* Dark red text */
+    padding: 20px;
+    border: 1px solid #FFB6C1; /* Lighter pink border */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Menu Button */
+.menu-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(35, 84, 120, 0.8); /* Consistent sidebar color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu-btn:hover {
+    background-color: #236A64; /* Softer hover color */
+}
+
+.menu-btn:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 5;
+    }
+}
+
